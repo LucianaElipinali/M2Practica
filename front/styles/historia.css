@@ -1,0 +1,154 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px; 
+  background-color: rgba(180, 231, 250, 0.349);
+  color: white;
+  font-size: 20px;
+}
+
+body, h1, h2, p {
+  font-family: cursive !important;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('../assets/azuloscurito.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: rgb(72, 231, 212);
+}
+
+#movies-container {
+  display: flex; 
+  flex-wrap: nowrap; 
+  justify-content: space-around; 
+  align-items: center; 
+  padding: 20px;
+  color: #ffffff;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#nav #cinemax h1 {
+  font-size: 2rem;
+  animation: neon 1.5s infinite alternate;
+  margin: 0;
+}
+#nav .list ul li:last-child a {
+  margin-top: 0; 
+}
+
+.list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.list ul li {
+  margin-right: 20px;
+  transition: transform 0.3s ease-in-out; 
+}
+
+
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.list {
+  margin-left: auto;
+}
+
+.list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.list ul li {
+  display: inline;
+  margin-right: 20px;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.list ul li:last-child {
+  margin-right: 0;
+}
+
+.list ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out; 
+}
+
+.list ul li a:hover {
+  color: #00e1ff; 
+}
+
+.list ul li:hover {
+  transform: translateY(-5px); 
+}
+
+#historia {
+  border: 2px dashed white; 
+  padding: 10px;
+}
+
+#his {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
+  opacity: 0.7;
+  padding: 0; 
+  margin: 0; 
+  max-width: 100%; 
+  height: auto;
+}
+
+
+footer {
+  background-color: rgba(180, 231, 250, 0.349);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer #cinemax h1 {
+  font-size: 2rem;
+  animation: neon 1.5s infinite alternate;
+  margin: 0;
+}
+
+@keyframes neon {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00e1ff, 0 0 30px #00d5ff, 0 0 40px #00fffb, 0 0 55px #00fff2, 0 0 75px #6ff5ea;
+  }
+  100% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00e1ff, 0 0 40px #00d5ff, 0 0 50px #00fffb, 0 0 65px #00fff2, 0 0 90px #6ff5ea;
+  }
+}
