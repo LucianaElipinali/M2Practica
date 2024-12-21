@@ -1,0 +1,63 @@
+/* reset.css - Elimina estilos predeterminados del navegador */
+
+/* Elimina márgenes, paddings y bordes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configura tamaño de fuente base */
+html {
+    font-size: 100%; /* Equivale a 16px en la mayoría de los navegadores */
+    line-height: 1.5;
+}
+
+/* Configura el estilo predeterminado para elementos HTML */
+body {
+    font-family: sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Elimina subrayados de enlaces y establece colores iniciales */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Elimina estilos predeterminados de listas */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Estilo básico para tablas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Asegura que imágenes no excedan su contenedor */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Asegura que botones no hereden estilos */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+/* Resetea campos de formulario */
+input,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+}
